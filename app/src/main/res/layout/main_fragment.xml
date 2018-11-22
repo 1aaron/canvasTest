@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/main"
+        android:padding="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.main.MainFragment">
+
+    <TextView
+            android:id="@+id/message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Un texto que se va a poner en el contrato para poder probar como se vería un texto de ese tipo desde aquí"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:id="@+id/signature"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/message"
+        android:src="@drawable/signhere"
+        android:scaleType="centerCrop"
+        android:focusable="true"
+        android:clickable="true"/>
+    <ImageView android:layout_width="100dp"
+               android:layout_height="20dp"
+               android:scaleType="fitCenter"
+    android:id="@+id/imgSignatureView"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/signature"/>
+
+</android.support.constraint.ConstraintLayout>
